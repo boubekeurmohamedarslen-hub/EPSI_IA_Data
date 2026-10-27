@@ -14,10 +14,10 @@ def classement_sa(salaire):
     else:
         return 'faible'
 moy = employes['salaire'].mean()
-max = employes['salaire'].max()
-min = employes['salaire'].min()
-age_moy = employes["salaire"].mean()
-print(moy, max, min, age_moy)
+sal_max = employes['salaire'].max()
+sal_min = employes['salaire'].min()
+age_moy = employes["age"].mean()
+print(moy, sal_max, sal_min, age_moy)
 ancien = employes.loc[
     (employes['anciennete'] >= 3 ) & (employes["salaire"] >= 2000),
     ['anciennete' , 'salaire' , 'nom']

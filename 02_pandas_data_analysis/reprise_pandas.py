@@ -23,7 +23,7 @@ def evaluer_note(note):
     elif note >= 10:
         return 'admis'
     else :
-        return 'nin admis'
+        return 'non admis'
 df['resultat'] = df["note"].apply(evaluer_note)
 print(df)  
 best1 = df.loc[

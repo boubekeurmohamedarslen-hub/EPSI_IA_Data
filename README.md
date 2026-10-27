@@ -1,59 +1,67 @@
 # EPSI IA & Data Science
 
-Dépôt regroupant mes exercices, projets et expérimentations réalisés dans le cadre de ma formation en Intelligence Artificielle et Data Science à l'EPSI.
+Dépôt regroupant mes exercices réalisés dans le cadre de ma formation en Intelligence Artificielle et Data Science à l'EPSI. Chaque script se lance seul et travaille sur un petit jeu de données écrit dans le code.
 
-## Objectifs
+Mes projets plus complets sont dans des dépôts séparés :
 
-Ce repository me permet de suivre ma progression en :
-
-- Python
-- Pandas et NumPy
-- Analyse de données
-- Visualisation de données
-- Machine Learning
-- Scikit-learn
-- Jupyter Notebook
-- Git et GitHub
+- [Sentinel-X](https://github.com/boubekeurmohamedarslen-hub/Sentinel-X) : surveillance sur ESP32-CAM, YOLO, reconnaissance faciale YuNet/SFace, MQTT et dashboard Django
+- [analyse_agricole](https://github.com/boubekeurmohamedarslen-hub/analyse_agricole) : audit et nettoyage d'un jeu de données agricoles avec Pandas
 
 ## Structure
 
 ### 01_python
 
-Bases de Python : variables, conditions, boucles, listes, dictionnaires, fonctions et exercices d'algorithmique.
+Bases de Python : conditions, boucles, listes, fonctions et chaînes de caractères.
+
+| Fichier | Contenu |
+|---|---|
+| `moyenne_notes.py` | moyenne d'une liste de notes et résultat validé ou non |
+| `notes_validees.py` | boucle sur une liste de notes, première DataFrame Pandas |
+| `fonction_evaluer_note.py` | fonction à plusieurs seuils (excellent, admis, refus) |
+| `fonction_admission.py` | fonction avec `return` |
+| `examen_blanc_notes_admises.py` | filtrer une liste dans une fonction |
+| `boucle_while.py` | boucle `while` |
+| `manipulation_chaines.py` | `lower()`, `split()`, `append()`, `sort()` |
 
 ### 02_pandas_data_analysis
 
-Manipulation et analyse de données avec Python et Pandas.
+Manipulation et analyse de données avec Pandas : filtres combinés, moyennes, minimums et maximums, tri, colonnes calculées avec `apply()`.
 
-Exemples :
-
-- analyse de résultats étudiants
-- analyse d'employés
-- filtrage de données
-- moyennes, minimums et maximums
-- sélection et transformation de données
+| Fichier | Contenu |
+|---|---|
+| `dataframe_et_graphique.py` | création d'une DataFrame et diagramme en barres Matplotlib |
+| `filtres_admis_majeurs.py` | filtres avec `&` et `\|`, admis et non admis |
+| `tri_et_moyenne.py` | moyenne et tri avec `sort_values()` |
+| `analyse_classe.py` | statistiques d'une classe, filtre note et âge, évaluation par élève |
+| `analyse_employes.py` | salaires, ancienneté, classement des salaires, profils expérimentés |
+| `resultats_etudiants.py` | colonne de résultat ajoutée avec `apply()` |
+| `reprise_pandas.py` | exercice de synthèse : classement, écart à la moyenne, position par rapport à la moyenne |
 
 ### 03_machine_learning
 
-Premiers projets de Machine Learning avec Scikit-learn.
+Premiers modèles avec Scikit-learn : régression linéaire qui prédit une note à partir des heures de travail.
 
-Notions travaillées :
-
-- préparation des données
-- séparation train/test
-- entraînement avec `fit()`
-- prédiction avec `predict()`
-- régression
-- classification
-- évaluation des modèles
+| Fichier | Contenu |
+|---|---|
+| `regression_lineaire.py` | `fit()` puis `predict()` sur un seul jeu de données |
+| `regression_train_test.py` | séparation train/test avec `train_test_split`, comparaison des vraies notes et des prédictions |
 
 ### 04_notebooks
 
-Notebooks Jupyter utilisés pour les exercices, tests et analyses interactives.
+| Fichier | Contenu |
+|---|---|
+| `verification_environnement.ipynb` | vérification de l'installation de NumPy, Pandas, Matplotlib et Scikit-learn |
+
+## Lancer les scripts
+
+```bash
+pip install -r requirements.txt
+python 02_pandas_data_analysis/analyse_classe.py
+```
 
 ## Technologies
 
-Python • Pandas • NumPy • Matplotlib • Scikit-learn • Jupyter • SQL • Git • GitHub
+Python • Pandas • NumPy • Matplotlib • Scikit-learn • Jupyter • Git • GitHub
 
 ## Parcours
 
@@ -71,4 +79,4 @@ Je recherche une alternance en Île-de-France dans les domaines :
 - Data Analysis
 - Data Engineering
 
-Ce dépôt sera régulièrement enrichi avec mes futurs projets Data et Machine Learning.
+Ce dépôt sera régulièrement enrichi avec mes futurs exercices Data et Machine Learning.
